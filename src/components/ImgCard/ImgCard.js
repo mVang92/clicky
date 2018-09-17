@@ -3,7 +3,7 @@ import "./ImgCard.css";
 
 const ImgCard = props => (
   <div className="card">
-    <div className="img-container">
+    <div className="img-container hvr-underline-from-center">
       <img alt={props.name} src={props.image} />
     </div>
   </div>
