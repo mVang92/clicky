@@ -1,6 +1,6 @@
 .navbar {
-  background: #6a1b9a;
   height: 60px;
+  background: rgba(180, 180, 180, 0.9);
 }
 
 .navbar a {

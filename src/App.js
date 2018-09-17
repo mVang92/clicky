@@ -26,7 +26,6 @@ class App extends Component {
         <Wrapper>
           {this.state.cards.map(card => (
             <ImgCard
-              removeFriend={this.removeFriend}
               id={card.id}
               image={card.image}
             />
