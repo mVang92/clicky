@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "assets/images/crystalA.png"
+  },
+  {
+    "id": 2,
+    "image": "assets/images/crystalB.png"
+  },
+  {
+    "id": 3,
+    "image": "assets/images/crystalC.png"
+  },
+  {
+    "id": 4,
+    "image": "assets/images/crystalD.png"
+  },
+  {
+    "id": 5,
+    "image": "assets/images/crystalE.png"
+  },
+  {
+    "id": 6,
+    "image": "assets/images/crystalF.png"
+  },
+  {
+    "id": 7,
+    "image": "assets/images/crystalG.png"
+  },
+  {
+    "id": 8,
+    "image": "assets/images/crystalH.png"
+  },
+  {
+    "id": 9,
+    "image": "assets/images/crystalI.png"
+  },
+  {
+    "id": 10,
+    "image": "assets/images/crystalJ.png"
+  },
+  {
+    "id": 11,
+    "image": "assets/images/crystalK.png"
+  },
+  {
+    "id": 12,
+    "image": "assets/images/crystalL.png"
+  }
+]
