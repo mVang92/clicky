@@ -33,6 +33,21 @@ class App extends Component {
   };
 
   handleIncrement() {
+    let newTopScore;
+    newTopScore = this.state.score + 1;
+    this.setState({score: this.state.score + 1, rightWrong: ""})
+
+    if (newTopScore > this.state.topScore) {
+      this.setState({ topScore: newTopScore });
+    }
+
+    // if (newTopScore > this.state.topScore) {
+    //   this.setState({ rightWrong: "You have the highest score now!" });
+    // }
+
+    if (newTopScore >= 5) {
+      this.winnerReset();
+    }
     this.initiateShuffle();
   }
 
@@ -46,9 +61,17 @@ class App extends Component {
     })
   }
 
+  winnerReset() {
+    this.setState({
+      score: 0,
+      rightWrong: "You win!",
+      clicked: []
+    })
+  }
+
   initiateShuffle() {
     let newShuffle = shuffleArray(cards);
-    this.setState({ cards: newShuffle});
+    this.setState({ cards: newShuffle });
   }
 
   // Map over this.state.friends and render a FriendCard component for each friend object
@@ -56,10 +79,10 @@ class App extends Component {
     return (
       <div>
         <Navbar
-        score={this.state.score}
-        rightWrong={this.state.rightWrong}
-        topScore={this.state.topScore}
-         />
+          score={this.state.score}
+          rightWrong={this.state.rightWrong}
+          topScore={this.state.topScore}
+        />
         <Wrapper>
           {this.state.cards.map(card => (
             <ImgCard

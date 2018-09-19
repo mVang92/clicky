@@ -5,8 +5,9 @@ const Navbar = props => {
     <header className="navbar">
       <h1>Crystal Clicky Game</h1>
       <div id="guess">{props.rightWrong}</div>
-      <div id="score">{props.counter}</div>
-      <div id="topScore">{props.topScore}</div>
+      <div id="score">Score: {props.score}</div>
+      <div>|</div>
+      <div id="topScore">Top Score: {props.topScore}</div>
     </header>
   )
 }
