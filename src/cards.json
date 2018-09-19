@@ -1,50 +1,62 @@
 [
   {
     "id": 1,
-    "image": "assets/images/crystalA.png"
+    "image": "assets/images/crystalA.png",
+    "clicked": false
   },
   {
     "id": 2,
-    "image": "assets/images/crystalB.png"
+    "image": "assets/images/crystalB.png",
+    "clicked": false
   },
   {
     "id": 3,
-    "image": "assets/images/crystalC.png"
+    "image": "assets/images/crystalC.png",
+    "clicked": false
   },
   {
     "id": 4,
-    "image": "assets/images/crystalD.png"
+    "image": "assets/images/crystalD.png",
+    "clicked": false
   },
   {
     "id": 5,
-    "image": "assets/images/crystalE.png"
+    "image": "assets/images/crystalE.png",
+    "clicked": false
   },
   {
     "id": 6,
-    "image": "assets/images/crystalF.png"
+    "image": "assets/images/crystalF.png",
+    "clicked": false
   },
   {
     "id": 7,
-    "image": "assets/images/crystalG.png"
+    "image": "assets/images/crystalG.png",
+    "clicked": false
   },
   {
     "id": 8,
-    "image": "assets/images/crystalH.png"
+    "image": "assets/images/crystalH.png",
+    "clicked": false
   },
   {
     "id": 9,
-    "image": "assets/images/crystalI.png"
+    "image": "assets/images/crystalI.png",
+    "clicked": false
   },
   {
     "id": 10,
-    "image": "assets/images/crystalJ.png"
+    "image": "assets/images/crystalJ.png",
+    "clicked": false
   },
   {
     "id": 11,
-    "image": "assets/images/crystalK.png"
+    "image": "assets/images/crystalK.png",
+    "clicked": false
   },
   {
     "id": 12,
-    "image": "assets/images/crystalL.png"
+    "image": "assets/images/crystalL.png",
+    "clicked": false
   }
 ]
