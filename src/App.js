@@ -3,6 +3,7 @@ import ImgCard from "./components/ImgCard";
 import Wrapper from "./components/Wrapper";
 import cards from "./cards.json";
 import Navbar from "./components/Navbar/Navbar";
+import Scores from "./components/Scores/Scores";
 import "./App.css";
 
 function shuffleArray(cards) {
@@ -14,7 +15,6 @@ function shuffleArray(cards) {
 }
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
     cards: cards,
     clicked: [],
@@ -35,19 +35,16 @@ class App extends Component {
   handleIncrement() {
     let newTopScore;
     newTopScore = this.state.score + 1;
-    this.setState({score: this.state.score + 1, rightWrong: ""})
+    this.setState({ score: this.state.score + 1, rightWrong: "" })
 
     if (newTopScore > this.state.topScore) {
       this.setState({ topScore: newTopScore });
     }
 
-    // if (newTopScore > this.state.topScore) {
-    //   this.setState({ rightWrong: "You have the highest score now!" });
-    // }
-
-    if (newTopScore >= 5) {
-      this.winnerReset();
+    if (newTopScore > this.state.topScore) {
+      this.setState({ rightWrong: "You hold the highest score!" });
     }
+
     this.initiateShuffle();
   }
 
@@ -56,15 +53,7 @@ class App extends Component {
     this.setState({
       score: 0,
       topScore: this.state.topScore,
-      rightWrong: "Loser",
-      clicked: []
-    })
-  }
-
-  winnerReset() {
-    this.setState({
-      score: 0,
-      rightWrong: "You win!",
+      rightWrong: "Try Again!",
       clicked: []
     })
   }
@@ -78,7 +67,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar
+        <Navbar />
+        <Scores
           score={this.state.score}
           rightWrong={this.state.rightWrong}
           topScore={this.state.topScore}

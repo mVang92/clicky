@@ -1,6 +1,15 @@
+body {
+  background: url("/assets/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
 .navbar {
   height: 60px;
-  background: rgba(180, 180, 180, 0.9);
+  background: rgba(255, 35, 35, 0.9);
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 25px;
 }
 
 .navbar a {
@@ -11,7 +20,63 @@
   line-height: 3;
 }
 
+.navTitle {
+  color: white;
+  text-shadow: 2px 3px 5px rgb(92, 92, 92);
+}
+
 h1 {
   font-weight: bold;
   margin: auto;
+}
+
+.scores {
+  background: lightgrey;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  top: 60px;
+}
+
+#guess {
+  background: rgb(255, 255, 35);
+  float: left;
+  padding: 2px;
+}
+
+#score,
+#topScore,
+#break {
+  float: right;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 420px) {
+  .navTitle {
+    font-size: 30px;
+  }
+
+  #score,
+  #topScore,
+  #break,
+  #guess {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #score,
+  #topScore,
+  #break,
+  #guess {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .navTitle {
+    font-size: 26px;
+  }
 }

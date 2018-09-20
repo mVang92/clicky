@@ -1,18 +1,18 @@
 .card {
-  transition-duration: 0.5s;
-  height: 250px;
-  width: 250px;
-  position: relative;
+  transition-duration: 0.3s;
+  height: 200px;
+  width: 200px;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-  background: rgb(255, 255, 255);
-  margin: 10px;
-  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 75px;
+  border: 2px solid rgba(255, 255, 255, 0.01);
   cursor: pointer;
 }
 
 .card:hover {
   transition-duration:  0.1s;
-  border: 2px solid grey;
+  background: rgb(255, 255, 255);
+  border: 2px solid white;
 }
 
 img {
@@ -38,7 +38,7 @@ img {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: red;
+  background: rgb(255, 35, 35);
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -52,4 +52,32 @@ img {
 .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+@media only screen and (max-width: 857px) {
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 657px) {
+  .card {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media only screen and (max-width: 439px) {
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .card {
+    width: 75px;
+    height: 75px;
+  }
 }
